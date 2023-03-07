@@ -1,0 +1,17 @@
+img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    animation-name: moveLogo;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveLogo {
+    0% {filter: saturate(7); transform: skewY(20deg);  left: 0px;top: 0px;}
+    25% {filter: blur(4px); transform: none; left: 100px;top: 0px;}
+    50% {filter: contrast(180%); transform: skewY(-20deg); left: 100px;top: 100px;}
+    75% {filter: sepia(100%); transform: none; left: 0px;top: 100px;}
+    100% {filter: brightness(0.30); transform: skewY(20deg); left: 0px;top: 0px;}
+}
